@@ -143,25 +143,26 @@ const Testimonials = () => {
         {/* Next/Prev Buttons */}
         <button
           onClick={prevSlide}
-          className="absolute -left-16 top-1/2 -translate-y-1/2 focus:outline-none"
+          className="hidden md:flex absolute -left-16 top-1/2 -translate-y-1/2 bg-white shadow-md p-2 rounded-full hover:scale-110 transition"
         >
           <img
             src="/next_button_img.jpg"
             alt="Previous"
-            className="w-8 h-8 rotate-180 hover:scale-110 transition"
+            className="w-6 h-6 rotate-180"
           />
         </button>
 
         <button
           onClick={nextSlide}
-          className="absolute -right-16 top-1/2 -translate-y-1/2 focus:outline-none"
+          className="hidden md:flex absolute -right-16 top-1/2 -translate-y-1/2 bg-white shadow-md p-2 rounded-full hover:scale-110 transition"
         >
           <img
             src="/next_button_img.jpg"
             alt="Next"
-            className="w-8 h-8 hover:scale-110 transition"
+            className="w-6 h-6"
           />
         </button>
+
 
 
         {/* Dots Indicator */}
