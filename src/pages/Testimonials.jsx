@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import nextButton from "../images/next_button_img.jpg";
 
 const testimonials = [
   {
@@ -145,7 +146,7 @@ const Testimonials = () => {
           className="absolute -left-16 top-1/2 -translate-y-1/2 focus:outline-none"
         >
           <img
-            src="/src/images/next_button_img.jpg"
+            src={nextButton}
             alt="Previous"
             className="w-8 h-8 rotate-180 hover:scale-110 transition"
           />
@@ -156,7 +157,7 @@ const Testimonials = () => {
           className="absolute -right-16 top-1/2 -translate-y-1/2 focus:outline-none"
         >
           <img
-            src="/src/images/next_button_img.jpg"
+            src={nextButton}
             alt="Next"
             className="w-8 h-8 hover:scale-110 transition"
           />

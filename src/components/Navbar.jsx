@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
 
 const Navbar = ({ navRef }) => {
@@ -37,7 +38,7 @@ const Navbar = ({ navRef }) => {
         {/* Logo */}
         <Link to="/" className="flex items-center">
           <img
-            src={"/src/images/logo.png"}
+            src={logo}
             alt="SV Fitness Gym Logo"
             className="h-16 w-auto"
           />
