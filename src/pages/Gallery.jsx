@@ -50,7 +50,7 @@ const Gallery = () => {
           <img
             src={selectedImg}
             alt="full-screen"
-            className="w-[30%] h-auto rounded-lg shadow-lg"
+            className="w-[75%] md:w-[30%] h-auto rounded-lg shadow-lg"
           />
         </div>
       )}

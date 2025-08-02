@@ -9,21 +9,25 @@ const Navbar = ({ navRef }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScroll = window.scrollY;
+      if (window.innerWidth >= 768) {
+        // Desktop logic
+        const currentScroll = window.scrollY;
 
-      if (currentScroll <= 100) {
-        // Always show navbar near the top
-        setIsVisible(true);
-      } else {
-        // Hide on scroll down, show on scroll up
-        if (currentScroll > lastScrollY) {
-          setIsVisible(false); // scrolling down
+        if (currentScroll <= 100) {
+          setIsVisible(true);
         } else {
-          setIsVisible(true); // scrolling up
+          if (currentScroll > lastScrollY) {
+            setIsVisible(false); // scrolling down
+          } else {
+            setIsVisible(true); // scrolling up
+          }
         }
-      }
 
-      setLastScrollY(currentScroll);
+        setLastScrollY(currentScroll);
+      } else {
+        // Mobile: navbar is always visible
+        setIsVisible(true);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
