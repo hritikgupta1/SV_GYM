@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 
 const images = [
-  "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&q=80", // fitness
-  "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&q=80", // fitness
-  "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1200&q=80", // gym workout
-  "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1200&q=80", // dumbbells
-  "https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=1200&q=80", // personal trainer
-  "https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=1200&q=80", // personal trainer
-  "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1200&q=80", // dumbbells
-  "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=1200&q=80", // cardio
-  "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1200&q=80", // abs workout
-  "https://images.unsplash.com/photo-1579758629938-03607ccdbaba?auto=format&fit=crop&w=1200&q=80", // yoga training
-  "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1200&q=80", // abs workout
-  "https://images.unsplash.com/photo-1579758629938-03607ccdbaba?auto=format&fit=crop&w=1200&q=80", // yoga training
+  "/gallery_img1.jpeg",
+  "/gallery_img2.jpeg",
+  "/gallery_img3.jpeg",
+  "/gallery_img4.jpeg",
+  "/gallery_img5.jpeg",
+  "/gallery_img6.jpeg",
+  "/gallery_img7.jpeg",
+  "/gallery_img8.jpeg",
+  "/gallery_img9.jpeg",
+  "/gallery_img10.jpeg",
+  "/gallery_img11.jpeg",
+  "/gallery_img12.jpeg",
   
 ];
 
@@ -50,7 +50,7 @@ const Gallery = () => {
           <img
             src={selectedImg}
             alt="full-screen"
-            className="w-[60%] h-auto rounded-lg shadow-lg"
+            className="w-[30%] h-auto rounded-lg shadow-lg"
           />
         </div>
       )}

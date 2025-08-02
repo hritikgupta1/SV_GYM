@@ -16,37 +16,70 @@ const Services = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="bg-white p-6 rounded-lg shadow-md hover:scale-105 transform transition">
           <img
-            src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1200&q=80"
+            src="/personal training.png"
             alt="Personal Training"
-            className="rounded-md mb-4 w-full h-48 object-cover"
+            className="rounded-lg mb-4 w-full h-48 object-cover"
           />
           <h3 className="text-xl font-semibold mb-2">Personal Training</h3>
           <p className="text-gray-600">
-            One-on-one coaching tailored to your individual fitness needs.
+            One-on-one sessions tailored to your goals with full attention and support.
           </p>
         </div>
 
         <div className="bg-white p-6 rounded-lg shadow-md hover:scale-105 transform transition">
           <img
-            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80"
-            alt="Group Classes"
-            className="rounded-md mb-4 w-full h-48 object-cover"
+            src="/strength conditioning.jpg"
+            alt="Strength & Conditioning"
+            className="rounded-lg mb-4 w-full h-48 object-cover"
           />
-          <h3 className="text-xl font-semibold mb-2">Group Classes</h3>
+          <h3 className="text-xl font-semibold mb-2">Strength & Conditioning</h3>
           <p className="text-gray-600">
-            Fun and motivating group workouts to keep you on track.
+            Build strength, stamina, and athletic performance with proven methods.
           </p>
         </div>
 
         <div className="bg-white p-6 rounded-lg shadow-md hover:scale-105 transform transition">
           <img
-            src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?auto=format&fit=crop&w=1200&q=80"
+            src="/nutrition coaching.jpg"
             alt="Nutrition Coaching"
-            className="rounded-md mb-4 w-full h-48 object-cover"
+            className="rounded-lg mb-4 w-full h-48 object-cover"
           />
           <h3 className="text-xl font-semibold mb-2">Nutrition Coaching</h3>
           <p className="text-gray-600">
-            Learn how to eat smart with personalized nutrition plans.
+            Learn how to fuel your body with meal plans that suit your lifestyle.
+          </p>
+        </div>
+        <div className="bg-white p-6 rounded-lg shadow-md hover:scale-105 transform transition">
+          <img
+            src="/body building.jpg"
+            alt="Bodybuilding"
+            className="rounded-lg mb-4 w-full h-48 object-cover"
+          />
+          <h3 className="text-xl font-semibold mb-2">Bodybuilding</h3>
+          <p className="text-gray-600">
+            Expert plans to help you build muscle and achieve a competition-ready physique.
+          </p>
+        </div>
+        <div className="bg-white p-6 rounded-lg shadow-md hover:scale-105 transform transition">
+          <img
+            src="/power lifting.jpg"
+            alt="Powerlifting Preparation"
+            className="rounded-lg mb-4 w-full h-48 object-cover"
+          />
+          <h3 className="text-xl font-semibold mb-2">Powerlifting Preparation</h3>
+          <p className="text-gray-600">
+            Specialized programs to increase your max lifts and excel in competitions.
+          </p>
+        </div>
+        <div className="bg-white p-6 rounded-lg shadow-md hover:scale-105 transform transition">
+          <img
+            src="/group classes.jpg"
+            alt="Group Classes"
+            className="rounded-lg mb-4 w-full h-48 object-cover"
+          />
+          <h3 className="text-xl font-semibold mb-2">Group Classes</h3>
+          <p className="text-gray-600">
+            Fun, engaging group workouts that build community and keep you motivated.
           </p>
         </div>
       </div>

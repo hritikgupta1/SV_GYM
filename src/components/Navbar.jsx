@@ -9,18 +9,21 @@ const Navbar = ({ navRef }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.innerWidth >= 768) {
-        if (window.scrollY > 100) {
-          if (window.scrollY > lastScrollY) {
-            setIsVisible(false);
-          } else {
-            setIsVisible(true);
-          }
+      const currentScroll = window.scrollY;
+
+      if (currentScroll <= 100) {
+        // Always show navbar near the top
+        setIsVisible(true);
+      } else {
+        // Hide on scroll down, show on scroll up
+        if (currentScroll > lastScrollY) {
+          setIsVisible(false); // scrolling down
         } else {
-          setIsVisible(true);
+          setIsVisible(true); // scrolling up
         }
-        setLastScrollY(window.scrollY);
       }
+
+      setLastScrollY(currentScroll);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -30,9 +33,8 @@ const Navbar = ({ navRef }) => {
   return (
     <nav
       ref={navRef}
-      className={`bg-black text-white px-6 py-4 fixed top-0 left-0 w-full z-50 transition-transform duration-300 ${
-        isVisible ? "translate-y-0" : "-translate-y-full"
-      }`}
+      className={`bg-black text-white px-6 py-4 fixed top-0 left-0 w-full z-50 transition-transform duration-500 ${isVisible ? "translate-y-0" : "-translate-y-full"
+        }`}
     >
       <div className="flex md:justify-center justify-between items-center">
         {/* Logo */}
@@ -40,7 +42,7 @@ const Navbar = ({ navRef }) => {
           <img
             src="/logo.png"
             alt="SV Fitness Gym Logo"
-            className="h-16 w-auto"
+            className="h-16 w-auto mr-2"
           />
         </Link>
 

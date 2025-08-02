@@ -187,30 +187,38 @@ const Testimonials = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:scale-105 transition">
             <img
-              src="https://source.unsplash.com/80x80/?medal"
+              src="/mr india.png"
               alt="Award"
-              className="mx-auto mb-4"
+              className="rounded-lg mx-auto mb-4"
+            />
+            <h3 className="text-xl font-semibold mb-2">Mr. India Champion</h3>
+            <p className="text-gray-600">
+              Honored with the prestigious Mr. India title for excellence in bodybuilding and fitness.
+            </p>
+          </div>
+
+          <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:scale-105 transition">
+            <img
+              src="/mr delhi.png"
+              alt="Mr. Delhi Champion"
+              className="rounded-lg mx-auto mb-4"
             />
             <h3 className="text-xl font-semibold mb-2">Mr. Delhi Champion</h3>
-            <p className="text-gray-600">Recognized for outstanding performance in bodybuilding competitions.</p>
+            <p className="text-gray-600">
+              Winner of the Mr. Delhi Championship, showcasing dedication and competitive spirit.
+            </p>
           </div>
+
           <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:scale-105 transition">
             <img
-              src="https://source.unsplash.com/80x80/?certificate"
-              alt="Certification"
-              className="mx-auto mb-4"
+              src="/mr north india.png"
+              alt="Mr. North India Champion"
+              className="rounded-lg mx-auto mb-4"
             />
-            <h3 className="text-xl font-semibold mb-2">Certified Personal Trainer</h3>
-            <p className="text-gray-600">Certified by top international fitness organizations.</p>
-          </div>
-          <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:scale-105 transition">
-            <img
-              src="https://source.unsplash.com/80x80/?trophy"
-              alt="Trophy"
-              className="mx-auto mb-4"
-            />
-            <h3 className="text-xl font-semibold mb-2">100+ Clients Transformed</h3>
-            <p className="text-gray-600">A track record of successful transformations and client success stories.</p>
+            <h3 className="text-xl font-semibold mb-2">Mr. North India Champion</h3>
+            <p className="text-gray-600">
+              Recognized as Mr. North India for exceptional performance and fitness achievements.
+            </p>
           </div>
         </div>
       </section>

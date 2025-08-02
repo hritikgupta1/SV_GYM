@@ -8,7 +8,7 @@ const Home = () => (
         Welcome to SV FITNESS GYM
       </h1>
       <p className="text-lg md:text-2xl mb-6">
-        MR. Delhi | Champion | Professional Trainer
+        Mr. India | Champion | Professional Coach
       </p>
       <Link
         to="/contact"
@@ -16,17 +16,14 @@ const Home = () => (
       >
         Get Started
       </Link>
-      
+
     </section>
 
     {/* About Section */}
     <section className="py-12 px-6 max-w-6xl mx-auto text-center">
       <h2 className="text-3xl font-bold mb-6">About Me</h2>
       <p className="text-gray-700 leading-relaxed max-w-3xl mx-auto text-justify">
-        As MR. Delhi and a certified professional trainer, I have helped hundreds
-        of clients achieve their fitness goals through personalized training plans
-        and nutrition guidance. Whether you're looking to build muscle, lose weight,
-        or improve overall fitness, I will guide you every step of the way.
+        As MR. India, MR. Delhi, a certified professional coach and qualified dietician, I have had the privilege of transforming the lives of over 1500 clients worldwide. My holistic approach combines personalized training, science-backed nutrition plans, and constant motivation to help you achieve lasting results. Whether your goal is to build muscle, lose weight, or unlock your peak performance, I am committed to guiding you every step of the way with passion and precision.
       </p>
     </section>
 
@@ -36,7 +33,7 @@ const Home = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         <div className="bg-gray-100 rounded-xl shadow-md p-6 hover:scale-105 transform transition">
           <img
-            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&q=80"
+            src="/personal training.png"
             alt="Personal Training"
             className="rounded-lg mb-4 w-full h-48 object-cover"
           />
@@ -48,7 +45,7 @@ const Home = () => (
 
         <div className="bg-gray-100 rounded-xl shadow-md p-6 hover:scale-105 transform transition">
           <img
-            src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1200&q=80"
+            src="/strength conditioning.jpg"
             alt="Strength & Conditioning"
             className="rounded-lg mb-4 w-full h-48 object-cover"
           />
@@ -60,13 +57,49 @@ const Home = () => (
 
         <div className="bg-gray-100 rounded-xl shadow-md p-6 hover:scale-105 transform transition">
           <img
-            src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?auto=format&fit=crop&w=1200&q=80"
+            src="/nutrition coaching.jpg"
             alt="Nutrition Coaching"
             className="rounded-lg mb-4 w-full h-48 object-cover"
           />
           <h3 className="text-xl font-semibold mb-2">Nutrition Coaching</h3>
           <p className="text-gray-600">
             Learn how to fuel your body with meal plans that suit your lifestyle.
+          </p>
+        </div>
+
+        <div className="bg-gray-100 rounded-xl shadow-md p-6 hover:scale-105 transform transition">
+          <img
+            src="/body building.jpg"
+            alt="Bodybuilding"
+            className="rounded-lg mb-4 w-full h-48 object-cover"
+          />
+          <h3 className="text-xl font-semibold mb-2">Bodybuilding</h3>
+          <p className="text-gray-600">
+            Expert plans to help you build muscle and achieve a competition-ready physique.
+          </p>
+        </div>
+
+        <div className="bg-gray-100 rounded-xl shadow-md p-6 hover:scale-105 transform transition">
+          <img
+            src="/power lifting.jpg"
+            alt="Powerlifting Preparation"
+            className="rounded-lg mb-4 w-full h-48 object-cover"
+          />
+          <h3 className="text-xl font-semibold mb-2">Powerlifting Preparation</h3>
+          <p className="text-gray-600">
+            Specialized programs to increase your max lifts and excel in competitions.
+          </p>
+        </div>
+
+        <div className="bg-gray-100 rounded-xl shadow-md p-6 hover:scale-105 transform transition">
+          <img
+            src="/group classes.jpg"
+            alt="Group Classes"
+            className="rounded-lg mb-4 w-full h-48 object-cover"
+          />
+          <h3 className="text-xl font-semibold mb-2">Group Classes</h3>
+          <p className="text-gray-600">
+            Fun, engaging group workouts that build community and keep you motivated.
           </p>
         </div>
       </div>
