@@ -9,6 +9,7 @@ import Gallery from './pages/Gallery'
 import Testimonials from './pages/Testimonials'
 import Events from './pages/Events'
 import Contact from './pages/Contact'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   const navbarRef = useRef(null)
@@ -31,6 +32,9 @@ function App() {
 
   return (
     <Router>
+
+      <ScrollToTop />
+
       {/* Pass ref to Navbar */}
       <Navbar navRef={navbarRef} />
 
