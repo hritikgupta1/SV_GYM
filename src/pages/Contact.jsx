@@ -1,10 +1,10 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
   const form = useRef()
-  const [loading, setLoading] = useState(false)      // ✅ Correctly define loading state
+  const [loading, setLoading] = useState(false)
   const [statusMessage, setStatusMessage] = useState("")
 
   const sendEmail = (e) => {
@@ -41,18 +41,41 @@ const Contact = () => {
             Have questions or want to start your fitness journey? Fill out the form, and I’ll get back to you as soon as possible!
           </p>
           <div className="space-y-4">
-            <div className="flex items-center space-x-3">
+            <a href="tel:+919911994495" className="flex items-center space-x-3 hover:text-yellow-400 transition">
               <FaPhoneAlt className="text-2xl text-yellow-300" />
               <span>+91 99119 94495</span>
-            </div>
-            <div className="flex items-center space-x-3">
+            </a>
+
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info.svfitness123@gmail.com" className="flex items-center space-x-3 hover:text-yellow-400 transition" target="_blank">
+
               <FaEnvelope className="text-2xl text-yellow-300" />
               <span>info.svfitness123@gmail.com</span>
-            </div>
-            <div className="flex items-center space-x-3">
-              <FaMapMarkerAlt className="text-2xl text-yellow-300" />
-              <span>Rz A 340, Near Pal Daily, Main Market, Nihal Vihar <br/> New Delhi-110041</span>
-            </div>
+            </a>
+
+            <a
+              href="https://maps.app.goo.gl/xQXKxswrEMyyFpR57"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start space-x-3 hover:text-yellow-400 transition"
+            >
+              <FaMapMarkerAlt className="text-2xl text-yellow-300 mt-1" />
+              <span>
+                Rz A 340, Near Pal Daily, Main Market, Nihal Vihar <br /> New Delhi-110041
+              </span>
+            </a>
+
+            <a
+              href="https://www.instagram.com/sumitverma_fitness" // replace with your actual Insta link
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start space-x-3 hover:text-yellow-400 transition hover:underline"
+            >
+              <FaInstagram className="text-2xl text-yellow-300 mt-1" />
+              <span>
+                @s.v_fitnessgym
+              </span>
+            </a>
+
           </div>
         </div>
 

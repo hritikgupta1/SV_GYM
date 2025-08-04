@@ -65,6 +65,7 @@ const Navbar = ({ navRef }) => {
           <Link to="/services" className="hover:text-red-400">Services</Link>
           <Link to="/gallery" className="hover:text-red-400">Gallery</Link>
           <Link to="/testimonials" className="hover:text-red-400">Testimonials</Link>
+          <Link to="/events" className="hover:text-red-400">Events</Link>
           <Link to="/contact" className="hover:text-red-400">Contact</Link>
         </div>
       </div>
@@ -77,6 +78,7 @@ const Navbar = ({ navRef }) => {
           <Link to="/services" onClick={() => setIsOpen(false)} className="hover:text-red-400">Services</Link>
           <Link to="/gallery" onClick={() => setIsOpen(false)} className="hover:text-red-400">Gallery</Link>
           <Link to="/testimonials" onClick={() => setIsOpen(false)} className="hover:text-red-400">Testimonials</Link>
+          <Link to="/events" onClick={() => setIsOpen(false)} className="hover:text-red-400">Events</Link>
           <Link to="/contact" onClick={() => setIsOpen(false)} className="hover:text-red-400">Contact</Link>
         </div>
       )}

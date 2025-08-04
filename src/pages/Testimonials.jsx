@@ -2,67 +2,59 @@ import React, { useState, useEffect, useRef } from "react";
 
 
 const testimonials = [
-  {
-    name: "Rahul Verma",
-    text: "Best trainer ever! Helped me lose 12kg in just 3 months. Highly recommended!",
-    image: "https://randomuser.me/api/portraits/men/32.jpg"
-  },
-  {
-    name: "Neha Sharma",
-    text: "His training plans are amazing and so motivating. I feel stronger every week!",
-    image: "https://randomuser.me/api/portraits/women/44.jpg"
-  },
-  {
-    name: "Amit Kapoor",
-    text: "Super professional and knows exactly what works for your body type.",
-    image: "https://randomuser.me/api/portraits/men/22.jpg"
-  },
-  {
-    name: "Pooja Singh",
-    text: "The nutrition guidance changed my life! I feel healthier than ever.",
-    image: "https://randomuser.me/api/portraits/women/52.jpg"
-  },
-  {
-    name: "Karan Mehta",
-    text: "Great workouts and personal attention. Highly recommend to anyone serious about fitness!",
-    image: "https://randomuser.me/api/portraits/men/10.jpg"
-  },
-  {
-    name: "Shreya Bhatia",
-    text: "A very positive and motivating coach. I achieved my goal in record time!",
-    image: "https://randomuser.me/api/portraits/women/30.jpg"
-  },
-  {
-    name: "Arjun Malhotra",
-    text: "He makes workouts fun and effective. Best decision I made this year.",
-    image: "https://randomuser.me/api/portraits/men/47.jpg"
-  },
-  {
-    name: "Isha Gupta",
-    text: "The meal plans and workout combination gave me the transformation I wanted.",
-    image: "https://randomuser.me/api/portraits/women/61.jpg"
-  },
-  {
-    name: "Ravi Soni",
-    text: "Very knowledgeable and approachable trainer. Highly recommended.",
-    image: "https://randomuser.me/api/portraits/men/18.jpg"
-  },
-  {
-    name: "Meena Chawla",
-    text: "From day one, I felt supported and motivated. Amazing trainer!",
-    image: "https://randomuser.me/api/portraits/women/25.jpg"
-  },
-  {
-    name: "Dev Khurana",
-    text: "His attention to detail during sessions is unmatched. Worth every penny!",
-    image: "https://randomuser.me/api/portraits/men/36.jpg"
-  },
-  {
-    name: "Priya Jadhav",
-    text: "Thanks to his guidance, I’m in the best shape of my life.",
-    image: "https://randomuser.me/api/portraits/women/38.jpg"
-  }
+  { name: "Aarav Sharma", text: "Best trainer ever! Helped me lose 12kg in just 3 months. Highly recommended!" },
+  { name: "Ishita Patel", text: "His training plans are amazing and so motivating. I feel stronger every week!" },
+  { name: "Vivaan Iyer", text: "Super professional and knows exactly what works for your body type." },
+  { name: "Kiara Nair", text: "The nutrition guidance changed my life! I feel healthier than ever." },
+  { name: "Arjun Rao", text: "Great workouts and personal attention. Highly recommend to anyone serious about fitness!" },
+  { name: "Myra Reddy", text: "A very positive and motivating coach. I achieved my goal in record time!" },
+  { name: "Kabir Menon", text: "He makes workouts fun and effective. Best decision I made this year." },
+  { name: "Saanvi Deshmukh", text: "The meal plans and workout combination gave me the transformation I wanted." },
+  { name: "Krish Bhat", text: "Very knowledgeable and approachable trainer. Highly recommended." },
+  { name: "Aadhya Pillai", text: "From day one, I felt supported and motivated. Amazing trainer!" },
+  { name: "Reyansh Verma", text: "His attention to detail during sessions is unmatched. Worth every penny!" },
+  { name: "Anika Chatterjee", text: "Thanks to his guidance, I’m in the best shape of my life." },
+  { name: "Advik Joshi", text: "The workouts are challenging yet fun, and the results speak for themselves." },
+  { name: "Navya Mehta", text: "I feel stronger and healthier each week. Truly transformative coaching." },
+  { name: "Ira Saxena", text: "Great atmosphere and very knowledgeable trainer. Highly satisfied." },
+  { name: "Ayaan Kapoor", text: "Love the motivation and personal guidance. I'm finally consistent with my fitness!" },
+  { name: "Ritvik Malhotra", text: "The attention to my form and technique has helped me avoid injuries." },
+  { name: "Pari Sinha", text: "I lost 8kg in 2 months, and I feel more confident than ever." },
+  { name: "Aarush Krishnan", text: "Very professional and result-driven approach. Loved the experience." },
+  { name: "Mira Bansal", text: "The customized nutrition plan worked wonders for me." },
+  { name: "Devansh Kulkarni", text: "Best trainer in town! He genuinely cares about your goals." },
+  { name: "Rhea Aggarwal", text: "I achieved my dream body thanks to his dedication and guidance." },
+  { name: "Veer Chawla", text: "Highly motivating, energetic, and knowledgeable trainer!" },
+  { name: "Aanya Sehgal", text: "He pushes you beyond your limits in the best way possible." },
+  { name: "Nivaan Prasad", text: "Great variety in workouts, which keeps me excited every session." },
+  { name: "Leela Gupta", text: "My strength and stamina improved drastically within weeks." },
+  { name: "Dhruv Mishra", text: "He is committed to his clients' success and it shows." },
+  { name: "Siya Lakhani", text: "Love the positivity and energy in every training session." },
+  { name: "Arnav Srivastava", text: "Professional, punctual, and super motivating!" },
+  { name: "Vanya Kulshreshtha", text: "I feel more energetic and confident than ever before." },
+  { name: "Rehaan Gill", text: "The structured workouts are perfect for my busy schedule." },
+  { name: "Amaira Venkatesh", text: "Every session is exciting and challenging. Love it!" },
+  { name: "Abeer Mahajan", text: "I've never felt this fit and active in my life!" },
+  { name: "Charvi Dutta", text: "Highly supportive and motivating trainer. Thank you!" },
+  { name: "Ishaan Kohli", text: "Focuses on your individual goals and helps you achieve them." },
+  { name: "Avni Jha", text: "The results speak for themselves. I couldn't be happier!" },
+  { name: "Kiaan Bajaj", text: "Great energy and focus in every session. Highly recommended." },
+  { name: "Misha Tandon", text: "His training is well-balanced and effective." },
+  { name: "Yuvraj Raina", text: "The transformation I experienced is unbelievable!" },
+  { name: "Naina Narang", text: "I finally feel fit and strong. Thank you so much!" },
+  { name: "Shaurya Malik", text: "Gives personal attention and corrects every small mistake." },
+  { name: "Aarna Ghosh", text: "Super dedicated and patient. Great experience!" },
+  { name: "Atharv Sood", text: "Fitness feels fun because of his energy and encouragement." },
+  { name: "Tara Basu", text: "I feel motivated and positive every time I leave the gym." },
+  { name: "Aaryan Oberoi", text: "He tailors the workouts exactly as per your needs." },
+  { name: "Anvi Chakraborty", text: "Great combination of fun and hard work in his sessions." },
+  { name: "Vihaan Bedi", text: "I lost fat and gained muscle just as I wanted. Super happy!" },
+  { name: "Jiya Kaul", text: "He constantly checks on your progress and keeps you accountable." },
+  { name: "Arnav Nambiar", text: "Excellent trainer and mentor. Highly recommend him." },
+  { name: "Zara Bhatt", text: "I’ve seen incredible improvements in my fitness levels." },
+  { name: "Kabir Shetty", text: "I feel stronger and healthier every day. Truly thankful!" }
 ];
+
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -121,6 +113,8 @@ const Testimonials = () => {
         className="py-12 px-6 max-w-6xl mx-auto relative"
         onMouseEnter={stopAutoSlide}
         onMouseLeave={startAutoSlide}
+        onTouchStart={stopAutoSlide}     // stop on mobile touch
+        onTouchEnd={startAutoSlide}      // restart when touch endsF
       >
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -129,11 +123,7 @@ const Testimonials = () => {
               key={index}
               className="bg-white p-6 rounded-lg shadow-lg text-center transform transition-all duration-700 hover:scale-105 animate-fadeIn"
             >
-              <img
-                src={t.image}
-                alt={t.name}
-                className="w-20 h-20 rounded-full mx-auto mb-4 border-4 border-red-700"
-              />
+
               <p className="text-gray-700 italic mb-4">"{t.text}"</p>
               <h3 className="text-lg font-semibold text-red-700">{t.name}</h3>
             </div>
