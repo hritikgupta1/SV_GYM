@@ -13,6 +13,9 @@ const images = [
   "/gallery_img10.jpeg",
   "/gallery_img11.jpeg",
   "/gallery_img12.jpeg",
+  "/gallery_img13.jpeg",
+  "/gallery_img14.jpeg",
+  "/gallery_img15.jpeg",
   
 ];
 
